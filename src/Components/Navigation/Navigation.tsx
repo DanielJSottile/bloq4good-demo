@@ -1,7 +1,6 @@
 import React from 'react';
 import { Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
-import { useSpring, animated } from 'react-spring';
 import './Navigation.scss';
 
 const Navigation = (props: any) => {
