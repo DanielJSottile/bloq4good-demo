@@ -4,10 +4,9 @@ import { Route, Switch } from 'react-router-dom';
 import ErrorPage from '../ErrorPage/Errorpage';
 import LandingPage from '../../Routes/Landing/LandingPage';
 import NotFoundPage from '../../Routes/NotFoundPage/NotFoundPage';
-
 import './App.css';
 
-const App = (props: any) => {
+const App = (props: any): JSX.Element => {
   return (
     <Fragment>
       <main>

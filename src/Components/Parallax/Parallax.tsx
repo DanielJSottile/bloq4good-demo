@@ -2,7 +2,7 @@ import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import './Parallax.scss';
 
-const Parallax = (props: any) => {
+const Parallax = (props: any): JSX.Element => {
   return (
     <section>
       <div className="parallax-section-container">

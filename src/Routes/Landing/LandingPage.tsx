@@ -7,7 +7,7 @@ import HowItWorks from '../../Components/HowItWorks/HowItWorks';
 import Clients from '../../Components/Clients/Clients';
 import Footer from '../../Components/Footer/Footer';
 
-const LandingPage = (props: any) => {
+const LandingPage = (props: any): JSX.Element => {
   return (
     <Fragment>
       <Navigation />

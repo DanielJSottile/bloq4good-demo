@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navigation.scss';
 
-const Navigation = (props: any) => {
+const Navigation = (props: any): JSX.Element => {
   return (
     <Fragment>
       <img

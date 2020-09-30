@@ -1,7 +1,7 @@
 import React from 'react';
 import { Fragment } from 'react';
 
-const Clients = (props: any) => {
+const Clients = (props: any): JSX.Element => {
   return <Fragment />;
 };
 
