@@ -29,15 +29,17 @@
 .parallax-section-container {
   padding: 15px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
 }
 
 .words-container {
-  width: 38%;
+  margin-bottom: 200px;
+  width: 90%;
 }
 
 .parallax-container {
-  width: 45%;
+  width: 90%;
 }
 
 /* The typing effect */
@@ -58,5 +60,43 @@
   }
   50% {
     border-color: $nice-orange;
+  }
+}
+
+@media (min-width: 700px) {
+  .parallax-section-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .words-container {
+    margin-bottom: 0px;
+    width: 60%;
+  }
+
+  .parallax-container {
+    width: 30%;
+  }
+}
+
+@media (min-width: 800px) {
+  .words-container {
+    width: 50%;
+  }
+
+  .parallax-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 925px) {
+  /* Ideal Size */
+
+  .words-container {
+    width: 38%;
+  }
+
+  .parallax-container {
+    width: 45%;
   }
 }

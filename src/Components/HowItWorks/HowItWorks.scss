@@ -7,7 +7,7 @@
 
 .product-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-self: center;
   padding: 15px;
 }
@@ -182,5 +182,14 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (min-width: 700px) {
+  /* Ideal Size */
+
+  .product-container {
+    display: flex;
+    flex-direction: row;
   }
 }

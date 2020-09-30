@@ -7,7 +7,7 @@
 
 .benefits-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -138,5 +138,14 @@
     -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
     transform: rotateY(0deg) translateY(0) skewY(0deg);
     opacity: 1;
+  }
+}
+
+@media (min-width: 700px) {
+  /* Ideal Size */
+  .benefits-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }

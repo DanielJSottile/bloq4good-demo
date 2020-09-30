@@ -14,7 +14,7 @@ textarea {
   border: none;
   border-radius: 15px;
   padding: 15px;
-  width: 25%;
+  width: 55%;
   height: 20em;
 }
 
@@ -29,4 +29,10 @@ textarea {
   transition: 0.3s;
   color: $mint-cream;
   background-color: $spanish-green;
+}
+
+@media (min-width: 800px) {
+  textarea {
+    width: 25%;
+  }
 }

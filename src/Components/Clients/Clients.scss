@@ -12,6 +12,10 @@
   padding: 15px;
 }
 
+.client {
+  height: 50px;
+}
+
 .client:hover {
   -webkit-animation: jello-horizontal 0.9s both;
   animation: jello-horizontal 0.9s both;
@@ -252,5 +256,19 @@
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+  }
+}
+
+@media (min-width: 700px) {
+  /* Ideal Size */
+  .client {
+    height: 75px;
+  }
+}
+
+@media (min-width: 8250px) {
+  /* Ideal Size */
+  .client {
+    height: 100px;
   }
 }

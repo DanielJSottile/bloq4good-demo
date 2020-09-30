@@ -15,7 +15,6 @@ const Clients = (props: any): JSX.Element => {
             className="client"
             src={require('../../Images/wendys.png')}
             alt="logo"
-            height="100"
           />
         </ScrollAnimation>
         <ScrollAnimation animateIn="scale-in-center" animateOnce={true}>
@@ -23,7 +22,6 @@ const Clients = (props: any): JSX.Element => {
             className="client"
             src={require('../../Images/danper.png')}
             alt="logo"
-            height="100"
           />
         </ScrollAnimation>
         <ScrollAnimation animateIn="scale-in-center" animateOnce={true}>
@@ -31,7 +29,6 @@ const Clients = (props: any): JSX.Element => {
             className="client"
             src={require('../../Images/atando-cabos.png')}
             alt="logo"
-            height="100"
           />
         </ScrollAnimation>
         <ScrollAnimation animateIn="scale-in-center" animateOnce={true}>
@@ -39,7 +36,6 @@ const Clients = (props: any): JSX.Element => {
             className="client"
             src={require('../../Images/multiexports.png')}
             alt="logo"
-            height="100"
           />
         </ScrollAnimation>
       </div>

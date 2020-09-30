@@ -7,13 +7,14 @@
 
 .footer-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .footer-element {
   padding: 15px;
   margin: 15px;
   p {
+    font-size: 14px;
     padding: 0px;
     margin: 0px;
   }
@@ -22,4 +23,23 @@
 .copyright {
   padding-bottom: 15px;
   margin-bottom: 15px;
+}
+
+@media (min-width: 800px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 925px) {
+  /* Ideal Size */
+
+  p {
+    font-size: 20px;
+  }
 }

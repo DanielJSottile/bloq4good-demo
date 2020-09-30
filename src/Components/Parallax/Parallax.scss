@@ -44,7 +44,6 @@
 }
 
 .card6 {
-  margin: auto;
   width: 50ch;
   height: 50ch;
   background-image: url('../../Images/gears-layer-5.png');
@@ -57,4 +56,134 @@
   align-items: center;
   text-align: center;
   width: 100%;
+}
+
+@media (min-width: 600px) {
+  .card1 {
+    width: 25ch;
+    height: 25ch;
+  }
+
+  .card2 {
+    width: 25ch;
+    height: 25ch;
+  }
+
+  .card3 {
+    width: 25ch;
+    height: 25ch;
+  }
+
+  .card4 {
+    width: 25ch;
+    height: 25ch;
+  }
+
+  .card5 {
+    width: 25ch;
+    height: 25ch;
+  }
+
+  .card6 {
+    width: 25ch;
+    height: 25ch;
+  }
+}
+
+@media (min-width: 700px) {
+  .card1 {
+    width: 30ch;
+    height: 30ch;
+  }
+
+  .card2 {
+    width: 30ch;
+    height: 30ch;
+  }
+
+  .card3 {
+    width: 30ch;
+    height: 30ch;
+  }
+
+  .card4 {
+    width: 30ch;
+    height: 30ch;
+  }
+
+  .card5 {
+    width: 30ch;
+    height: 30ch;
+  }
+
+  .card6 {
+    width: 30ch;
+    height: 30ch;
+  }
+}
+
+@media (min-width: 800px) {
+  .card1 {
+    width: 40ch;
+    height: 40ch;
+  }
+
+  .card2 {
+    width: 40ch;
+    height: 40ch;
+  }
+
+  .card3 {
+    width: 40ch;
+    height: 40ch;
+  }
+
+  .card4 {
+    width: 40ch;
+    height: 40ch;
+  }
+
+  .card5 {
+    width: 40ch;
+    height: 40ch;
+  }
+
+  .card6 {
+    width: 40ch;
+    height: 40ch;
+  }
+}
+
+@media (min-width: 925px) {
+  /* Ideal Size */
+
+  .card1 {
+    width: 50ch;
+    height: 50ch;
+  }
+
+  .card2 {
+    width: 50ch;
+    height: 50ch;
+  }
+
+  .card3 {
+    width: 50ch;
+    height: 50ch;
+  }
+
+  .card4 {
+    width: 50ch;
+    height: 50ch;
+  }
+
+  .card5 {
+    width: 50ch;
+    height: 50ch;
+  }
+
+  .card6 {
+    width: 50ch;
+    height: 50ch;
+  }
 }
