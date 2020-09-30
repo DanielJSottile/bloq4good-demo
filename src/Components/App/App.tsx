@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Fragment } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import ErrorPage from '../ErrorPage/Errorpage';
+import LandingPage from '../../Routes/Landing/LandingPage';
+import NotFoundPage from '../../Routes/NotFoundPage/NotFoundPage';
+
 import './App.css';
 
-function App() {
+const App = (props: any) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <main>
+        <ErrorPage>
+          <Switch>
+            <Route exact path={'/'} component={LandingPage} />
+            <Route component={NotFoundPage} />
+          </Switch>
+        </ErrorPage>
+      </main>
+    </Fragment>
   );
-}
+};
 
 export default App;

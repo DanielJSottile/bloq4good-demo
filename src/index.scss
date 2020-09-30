@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+$link-font: 'Arvo', serif;
+$heading-font: 'Josefin Sans', sans-serif;
+$body-font: 'Lato', sans-serif;
+$med-gray: #444444;
+$mint-cream: #f0f7ee;
+$persian-green: #18a999;
+$spanish-green: #109648;
+$prussian-blue: #10395d;
+$steel-blue: #3d81c2;
+$nice-purple: #644b9e;
+$nice-yellow: #fae83e;
+$nice-pink: #ec1c5a;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $mint-cream;
+  font-family: $body-font;
+  word-spacing: 1px;
+  font-size: 20px;
+  color: $med-gray;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1 {
+  font-family: $heading-font;
+  letter-spacing: 5px;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: $link-font;
+}
+
+section {
+  padding: 15px;
+}

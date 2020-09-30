@@ -1,0 +1,22 @@
+@import '../../index.scss';
+
+.problems-section {
+  color: $mint-cream;
+  background-color: $nice-pink;
+}
+
+.problems-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.problems {
+  margin: 15px;
+  padding: 15px;
+}
+
+.problems:hover {
+  transition: 0.3s;
+  background-color: #a51440;
+}
