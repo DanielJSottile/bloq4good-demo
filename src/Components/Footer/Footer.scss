@@ -1,0 +1,25 @@
+@import '../../index.scss';
+
+.footer-section {
+  background-color: $med-gray;
+  color: $mint-cream;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-element {
+  padding: 15px;
+  margin: 15px;
+  p {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+.copyright {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}

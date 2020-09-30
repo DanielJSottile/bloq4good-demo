@@ -1,0 +1,32 @@
+@import '../../index.scss';
+
+input {
+  color: $med-gray;
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 15px;
+}
+
+textarea {
+  resize: none;
+  color: $med-gray;
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  width: 25%;
+  height: 20em;
+}
+
+.submit {
+  background-color: $mint-cream;
+  color: $med-gray;
+  font-family: $link-font;
+  font-size: 26px;
+}
+
+.submit:hover {
+  transition: 0.3s;
+  color: $mint-cream;
+  background-color: $spanish-green;
+}
