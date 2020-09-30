@@ -5,12 +5,28 @@ import './Problems.scss';
 const Problems = (props: any): JSX.Element => {
   // could modularize this in the future
 
+  const randomNumber = (min: number, max: number): number => {
+    return Math.random() * (max - min) + min;
+  };
+
+  let timesArr: any[] = [0, 0, 0, 0];
+
+  timesArr = timesArr.map((time: number) => {
+    return randomNumber(1, 1000);
+  });
+
   return (
     <section className="problems-section">
-      <h1 className="left">What We're Solving</h1>
+      <ScrollAnimation animateIn="roll-in-blurred-left" animateOnce={true}>
+        <h1 className="left">What We're Solving</h1>
+      </ScrollAnimation>
       <div className="problems-container">
         <div className="problems">
-          <ScrollAnimation animateIn="fade-in-up">
+          <ScrollAnimation
+            animateIn="fade-in-up"
+            animateOnce={true}
+            delay={timesArr[0]}
+          >
             <h2>Problem 1</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -21,7 +37,11 @@ const Problems = (props: any): JSX.Element => {
           </ScrollAnimation>
         </div>
         <div className="problems">
-          <ScrollAnimation animateIn="fade-in-up">
+          <ScrollAnimation
+            animateIn="fade-in-up"
+            animateOnce={true}
+            delay={timesArr[1]}
+          >
             <h2>Problem 2</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -32,7 +52,11 @@ const Problems = (props: any): JSX.Element => {
           </ScrollAnimation>
         </div>
         <div className="problems">
-          <ScrollAnimation animateIn="fade-in-up">
+          <ScrollAnimation
+            animateIn="fade-in-up"
+            animateOnce={true}
+            delay={timesArr[2]}
+          >
             <h2>Problem 3</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -43,8 +67,12 @@ const Problems = (props: any): JSX.Element => {
           </ScrollAnimation>
         </div>
         <div className="problems">
-          <ScrollAnimation animateIn="fade-in-up">
-            <h2>Problem 3</h2>
+          <ScrollAnimation
+            animateIn="fade-in-up"
+            animateOnce={true}
+            delay={timesArr[3]}
+          >
+            <h2>Problem 4</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
