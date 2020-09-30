@@ -5,11 +5,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 15px;
-  padding: 10px;
+  margin-bottom: 55px;
+  padding: 40px;
 }
 
 .navlink {
+  height: 60px;
   font-family: $link-font;
   border-bottom: 0px solid $nice-pink;
   -moz-transition: ease 0.3s;

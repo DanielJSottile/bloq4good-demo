@@ -1,7 +1,7 @@
 import React from 'react';
 import { Fragment } from 'react';
 import Navigation from '../../Components/Navigation/Navigation';
-import Parallax from '../../Components/Parallax/Parallax';
+import Intro from '../../Components/Intro/Intro';
 import Problems from '../../Components/Problems/Problems';
 import HowItWorks from '../../Components/HowItWorks/HowItWorks';
 import WhoItBenefits from '../../Components/WhoItBenefits/WhoItBenefits';
@@ -13,7 +13,7 @@ const LandingPage = (props: any): JSX.Element => {
   return (
     <Fragment>
       <Navigation />
-      <Parallax />
+      <Intro />
       <Problems />
       <HowItWorks />
       <WhoItBenefits />

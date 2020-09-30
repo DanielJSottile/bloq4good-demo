@@ -1,62 +1,60 @@
-@import '../../index.scss';
-
-.word {
-  margin: 0px;
-  padding: 0px;
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+  position: absolute;
+  text-align: center;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
 }
 
-/* DEMO-SPECIFIC STYLES */
-.typewriter {
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.2em solid transparent; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end;
+.card1 {
+  width: 50ch;
+  height: 50ch;
+  background-image: url('../../Images/gears-layer-1.png');
 }
 
-.typewriter-end {
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.2em solid $nice-orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+.card2 {
+  width: 50ch;
+  height: 50ch;
+  background-image: url('../../Images/gears-layer-2.png');
 }
 
-.parallax-section-container {
-  padding: 15px;
+.card3 {
+  width: 50ch;
+  height: 50ch;
+  background-image: url('../../Images/gears-layer-3.png');
+}
+
+.card4 {
+  width: 50ch;
+  height: 50ch;
+  background-image: url('../../Images/connected-users-flat-vector-icon-isolated-graphic-style-eps-simple-flat-icon-element-business-office-concept-connected-users-160487412.png');
+}
+
+.card5 {
+  width: 50ch;
+  height: 50ch;
+  background-image: url('../../Images/gears-layer-4.png');
+}
+
+.card6 {
+  margin: auto;
+  width: 50ch;
+  height: 50ch;
+  background-image: url('../../Images/gears-layer-5.png');
+}
+
+.container {
   display: flex;
   flex-direction: row;
-}
-
-.words-container {
-  width: 38%;
-}
-
-.parallax-container {
-  width: 45%;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: $nice-orange;
-  }
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
 }

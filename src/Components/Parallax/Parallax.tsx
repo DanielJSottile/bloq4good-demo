@@ -1,37 +1,53 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
-import ScrollAnimation from 'react-animate-on-scroll';
 import './Parallax.scss';
 
-const Parallax = (props: any): JSX.Element => {
+const calc = (x: any, y: any) => [
+  x - window.innerWidth / 2,
+  y - window.innerHeight / 2,
+];
+const trans1 = (x: any, y: any) => `translate3d(${x / 10}px,${y / 10}px,0)`;
+const trans2 = (x: any, y: any) => `translate3d(${x / 8}px,${y / 8}px,0)`;
+const trans3 = (x: any, y: any) => `translate3d(${x / 6}px,${y / 6}px,0)`;
+const trans4 = (x: any, y: any) => `translate3d(${x / 4.75}px,${y / 4.75}px,0)`;
+const trans5 = (x: any, y: any) => `translate3d(${x / 3.5}px,${y / 3.5}px,0)`;
+const trans6 = (x: any, y: any) => `translate3d(${x / 1.5}px,${y / 1.5}px,0)`;
+
+const Parallax = (): JSX.Element => {
+  const [props, set] = useSpring(() => ({
+    xy: [0, 0],
+    config: { mass: 10, tension: 550, friction: 140 },
+  }));
   return (
-    <section>
-      <div className="parallax-section-container">
-        <div className="words-container">
-          <div className="typing-box">
-            <ScrollAnimation animateIn="typewriter" animateOnce={true}>
-              <h1 className="word">Blockchain.</h1>
-            </ScrollAnimation>
-            <ScrollAnimation
-              animateIn="typewriter-end"
-              animateOnce={true}
-              delay={1000}
-            >
-              <h1 className="word">Re-invented.</h1>
-            </ScrollAnimation>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-        <div className="parallax-container">
-          <p>Parallax goes here.</p>
-        </div>
-      </div>
-    </section>
+    <div
+      className="container"
+      onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
+    >
+      <animated.div
+        className="card1"
+        style={{ transform: props.xy.interpolate(trans1 as any) }}
+      />
+      <animated.div
+        className="card2"
+        style={{ transform: props.xy.interpolate(trans2 as any) }}
+      />
+      <animated.div
+        className="card3"
+        style={{ transform: props.xy.interpolate(trans3 as any) }}
+      />
+      <animated.div
+        className="card4"
+        style={{ transform: props.xy.interpolate(trans4 as any) }}
+      />
+      <animated.div
+        className="card5"
+        style={{ transform: props.xy.interpolate(trans5 as any) }}
+      />
+      <animated.div
+        className="card6"
+        style={{ transform: props.xy.interpolate(trans6 as any) }}
+      />
+    </div>
   );
 };
 
