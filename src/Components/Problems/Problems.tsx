@@ -17,7 +17,7 @@ const Problems = (props: any): JSX.Element => {
 
   return (
     <section className="problems-section">
-      <ScrollAnimation animateIn="roll-in-blurred-left" animateOnce={true}>
+      <ScrollAnimation animateIn="puff-in-center" animateOnce={true}>
         <h1 className="left">What We're Solving</h1>
       </ScrollAnimation>
       <div className="problems-container">
