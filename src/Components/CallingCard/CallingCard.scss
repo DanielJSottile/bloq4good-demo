@@ -16,7 +16,8 @@
 .Ccard3,
 .Ccard4,
 .Ccard5,
-.Ccard6 {
+.Ccard6,
+.Ccard7 {
   position: absolute;
   text-align: center;
   border-radius: 5px;
@@ -35,28 +36,34 @@
 .Ccard2 {
   width: 50ch;
   height: 50ch;
-  background-image: url('../../Images/SubImages/rainbow-final.png');
+  background-image: url('../../Images/SubImages/maps-final.png');
 }
 
 .Ccard3 {
   width: 50ch;
   height: 50ch;
-  background-image: url('../../Images/SubImages/lines-final.png');
+  background-image: url('../../Images/SubImages/rainbow-final.png');
 }
 
 .Ccard4 {
   width: 50ch;
   height: 50ch;
-  background-image: url('../../Images/SubImages/logo-final.png');
+  background-image: url('../../Images/SubImages/lines-final.png');
 }
 
 .Ccard5 {
   width: 50ch;
   height: 50ch;
-  background-image: url('../../Images/SubImages/bridging-final.png');
+  background-image: url('../../Images/SubImages/logo-final.png');
 }
 
 .Ccard6 {
+  width: 50ch;
+  height: 50ch;
+  background-image: url('../../Images/SubImages/bridging-final.png');
+}
+
+.Ccard7 {
   width: 50ch;
   height: 50ch;
   background-image: url('../../Images/SubImages/text-final.png');
@@ -102,6 +109,11 @@
     width: 25ch;
     height: 25ch;
   }
+
+  .Ccard7 {
+    width: 25ch;
+    height: 25ch;
+  }
 }
 
 @media (min-width: 700px) {
@@ -131,6 +143,11 @@
   }
 
   .Ccard6 {
+    width: 30ch;
+    height: 30ch;
+  }
+
+  .Ccard7 {
     width: 30ch;
     height: 30ch;
   }
@@ -166,6 +183,11 @@
     width: 40ch;
     height: 40ch;
   }
+
+  .Ccard7 {
+    width: 40ch;
+    height: 40ch;
+  }
 }
 
 @media (min-width: 925px) {
@@ -197,6 +219,11 @@
   }
 
   .Ccard6 {
+    width: 80%;
+    height: 50ch;
+  }
+
+  .Ccard7 {
     width: 80%;
     height: 50ch;
   }
