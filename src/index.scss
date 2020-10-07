@@ -33,8 +33,8 @@ body {
 
 h1 {
   font-family: $heading-font;
-  letter-spacing: 5px;
-  font-size: 50px;
+  letter-spacing: 3px;
+  font-size: 40px;
 }
 
 h2 {
@@ -45,6 +45,10 @@ section {
   padding: 15px;
 }
 
-@media (min-width: 925px) {
-  /* Ideal Size */
+@media (min-width: 430px) {
+  h1 {
+    font-family: $heading-font;
+    letter-spacing: 5px;
+    font-size: 50px;
+  }
 }

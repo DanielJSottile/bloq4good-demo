@@ -12,6 +12,7 @@ const Navigation = (props: any): JSX.Element => {
   const linkRefSource = useRef<HTMLAnchorElement>(null);
   const linkRefDept = useRef<HTMLAnchorElement>(null);
   const linkRefVroom = useRef<HTMLAnchorElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   const smallLinks = [
     <NavLink
@@ -68,12 +69,16 @@ const Navigation = (props: any): JSX.Element => {
       linkRefSource?.current?.classList.remove('isDisabled');
       linkRefDept?.current?.classList.remove('isDisabled');
       linkRefVroom?.current?.classList.remove('isDisabled');
+      buttonRef?.current?.classList.remove('open');
+      buttonRef?.current?.classList.add('closed');
     } else {
       linkRefAbout?.current?.classList.add('isDisabled');
       linkRefContact?.current?.classList.add('isDisabled');
       linkRefSource?.current?.classList.add('isDisabled');
       linkRefDept?.current?.classList.add('isDisabled');
       linkRefVroom?.current?.classList.add('isDisabled');
+      buttonRef?.current?.classList.remove('closed');
+      buttonRef?.current?.classList.add('open');
     }
   };
 
@@ -101,12 +106,15 @@ const Navigation = (props: any): JSX.Element => {
       <div className="upper-nav">
         <img
           src={require('../../Images/b4g_final-01.png')}
+          className="main-logo"
           alt="logo"
-          width="300"
-          height="100"
         />
         <nav className="navigation-small">
-          <button className="hamburger" onClick={onButtonClick}></button>
+          <button
+            className="hamburger open"
+            ref={buttonRef}
+            onClick={onButtonClick}
+          ></button>
           {renderMenu()}
         </nav>
       </div>

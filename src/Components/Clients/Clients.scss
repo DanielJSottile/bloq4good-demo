@@ -13,7 +13,7 @@
 }
 
 .client {
-  height: 50px;
+  height: 40px;
 }
 
 .client:hover {
@@ -259,8 +259,13 @@
   }
 }
 
+@media (min-width: 425px) {
+  .client {
+    height: 50px;
+  }
+}
+
 @media (min-width: 700px) {
-  /* Ideal Size */
   .client {
     height: 75px;
   }

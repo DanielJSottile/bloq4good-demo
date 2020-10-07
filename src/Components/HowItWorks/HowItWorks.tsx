@@ -8,66 +8,68 @@ const HowItWorks = (props: any): JSX.Element => {
       <ScrollAnimation animateIn="fade-in" animateOnce={true}>
         <h1 className="left">How our Products Work</h1>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="fade-in-top" animateOnce={true}>
-        <div className="product-container">
-          <div className="text-container">
-            <h2>Product 1</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+      <div className="works-container">
+        <ScrollAnimation animateIn="fade-in-top" animateOnce={true}>
+          <div className="product-container">
+            <div className="text-container">
+              <h2>Product 1</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div className="product-image heartbeat">
+              <img
+                className="prod-img"
+                src={require('../../Images/source4good-logo-final.png')}
+                alt="logo"
+              />
+            </div>
           </div>
-          <div className="product-image heartbeat">
-            <img
-              src={require('../../Images/source4good-logo-final.png')}
-              alt="logo"
-              width="300"
-            />
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fade-in-top" animateOnce={true}>
+          <div className="product-container">
+            <div className="text-container">
+              <h2>Product 2</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div className="product-image heartbeat">
+              <img
+                className="prod-img"
+                src={require('../../Images/dept-of-good.png')}
+                alt="logo"
+              />
+            </div>
           </div>
-        </div>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fade-in-top" animateOnce={true}>
-        <div className="product-container">
-          <div className="text-container">
-            <h2>Product 2</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fade-in-top" animateOnce={true}>
+          <div className="product-container">
+            <div className="text-container">
+              <h2>Product 3</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div className="product-image heartbeat">
+              <img
+                className="prod-img"
+                src={require('../../Images/myvroom_logo-final.png')}
+                alt="logo"
+              />
+            </div>
           </div>
-          <div className="product-image heartbeat">
-            <img
-              src={require('../../Images/dept-of-good.png')}
-              alt="logo"
-              width="300"
-            />
-          </div>
-        </div>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fade-in-top" animateOnce={true}>
-        <div className="product-container">
-          <div className="text-container">
-            <h2>Product 3</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-          <div className="product-image heartbeat">
-            <img
-              src={require('../../Images/myvroom_logo-final.png')}
-              alt="logo"
-              height="50"
-            />
-          </div>
-        </div>
-      </ScrollAnimation>
+        </ScrollAnimation>
+      </div>
     </section>
   );
 };

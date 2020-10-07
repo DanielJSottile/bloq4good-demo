@@ -1,5 +1,10 @@
 @import '../../index.scss';
 
+.main-logo {
+  width: 200px;
+  height: 75px;
+}
+
 .navigation-large,
 .navlink {
   display: none;
@@ -18,8 +23,22 @@
   background-color: transparent;
   border: none;
   margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.open {
   &:before {
     content: '\2630';
+  }
+}
+
+.closed {
+  &:before {
+    content: '\2716';
   }
 }
 
@@ -228,6 +247,13 @@
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
+  }
+}
+
+@media (min-width: 455px) {
+  .main-logo {
+    width: 300px;
+    height: 115px;
   }
 }
 
