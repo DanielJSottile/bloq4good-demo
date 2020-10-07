@@ -1,12 +1,83 @@
 @import '../../index.scss';
 
-.navigation {
+.navigation-large,
+.navlink {
+  display: none;
+}
+
+.isDisabled {
+  pointer-events: none;
+}
+
+.navigation-small {
+  text-align: right;
+}
+
+.hamburger {
+  font-size: 35px;
+  background-color: transparent;
+  border: none;
+  margin-right: 15px;
+  &:before {
+    content: '\2630';
+  }
+}
+
+.upper-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-  padding: 30px;
+  align-items: top;
+  margin: 15px;
+  height: 150px;
+}
+
+.small-navlink {
+  position: absolute;
+  right: 15px;
+  font-size: 14px;
+  font-family: $link-font;
+  transition: 0.3s;
+  &:hover,
+  &:focus {
+    color: $nice-pink;
+  }
+}
+
+.menu-expand:nth-child(2) {
+  a {
+    &:hover,
+    &:focus {
+      color: $nice-purple;
+    }
+  }
+}
+
+.menu-expand:nth-child(3) {
+  a {
+    &:hover,
+    &:focus {
+      color: $steel-blue;
+    }
+  }
+}
+
+.menu-expand:nth-child(4) {
+  a {
+    &:hover,
+    &:focus {
+      color: $persian-green;
+    }
+  }
+}
+
+.menu-expand:nth-child(5) {
+  a {
+    &:hover,
+    &:focus {
+      color: $spanish-green;
+    }
+  }
 }
 
 .navlink {
@@ -95,6 +166,14 @@
   display: inline-block;
 }
 
+.small-navlink:link,
+.small-navlink:visited {
+  color: $med-gray;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
 .navlink:hover,
 .navlink:active {
   text-shadow: 2px 2px solid $med-gray;
@@ -102,6 +181,13 @@
   transition: 0.3s;
   -webkit-animation: pulsate-fwd 0.5s ease-in-out both;
   animation: pulsate-fwd 0.5s ease-in-out both;
+}
+
+.small-navlink:hover,
+.small-navlink:active {
+  text-shadow: 2px 2px solid $med-gray;
+  color: $nice-pink;
+  transition: 0.3s;
 }
 
 /* ----------------------------------------------
@@ -142,6 +228,21 @@
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
+  }
+}
+
+@media (min-width: 600px) {
+  .navigation-large {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 30px;
+  }
+
+  .navigation-small {
+    display: none;
   }
 }
 

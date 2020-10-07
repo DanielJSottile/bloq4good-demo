@@ -28,44 +28,44 @@
 }
 
 .Ccard1 {
-  width: 50ch;
-  height: 50ch;
+  width: 85%;
+  height: 20ch;
   background-image: url('../../Images/SubImages/background-final.png');
 }
 
 .Ccard2 {
-  width: 50ch;
-  height: 50ch;
+  width: 85%;
+  height: 20ch;
   background-image: url('../../Images/SubImages/maps-final.png');
 }
 
 .Ccard3 {
-  width: 50ch;
-  height: 50ch;
+  width: 85%;
+  height: 20ch;
   background-image: url('../../Images/SubImages/rainbow-final.png');
 }
 
 .Ccard4 {
-  width: 50ch;
-  height: 50ch;
+  width: 85%;
+  height: 20ch;
   background-image: url('../../Images/SubImages/lines-final.png');
 }
 
 .Ccard5 {
-  width: 50ch;
-  height: 50ch;
+  width: 85%;
+  height: 20ch;
   background-image: url('../../Images/SubImages/logo-final.png');
 }
 
 .Ccard6 {
-  width: 50ch;
-  height: 50ch;
+  width: 85%;
+  height: 20ch;
   background-image: url('../../Images/SubImages/bridging-final.png');
 }
 
 .Ccard7 {
-  width: 50ch;
-  height: 50ch;
+  width: 85%;
+  height: 20ch;
   background-image: url('../../Images/SubImages/text-final.png');
 }
 
@@ -76,116 +76,100 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 700px;
+  height: 400px;
 }
 
 @media (min-width: 600px) {
+  .Ccontainer {
+    width: 100%;
+    height: 550px;
+  }
+
   .Ccard1 {
-    width: 25ch;
     height: 25ch;
   }
 
   .Ccard2 {
-    width: 25ch;
     height: 25ch;
   }
 
   .Ccard3 {
-    width: 25ch;
     height: 25ch;
   }
 
   .Ccard4 {
-    width: 25ch;
     height: 25ch;
   }
 
   .Ccard5 {
-    width: 25ch;
     height: 25ch;
   }
 
   .Ccard6 {
-    width: 25ch;
     height: 25ch;
   }
 
   .Ccard7 {
-    width: 25ch;
     height: 25ch;
   }
 }
 
 @media (min-width: 700px) {
   .Ccard1 {
-    width: 30ch;
     height: 30ch;
   }
 
   .Ccard2 {
-    width: 30ch;
     height: 30ch;
   }
 
   .Ccard3 {
-    width: 30ch;
     height: 30ch;
   }
 
   .Ccard4 {
-    width: 30ch;
     height: 30ch;
   }
 
   .Ccard5 {
-    width: 30ch;
     height: 30ch;
   }
 
   .Ccard6 {
-    width: 30ch;
     height: 30ch;
   }
 
   .Ccard7 {
-    width: 30ch;
     height: 30ch;
   }
 }
 
 @media (min-width: 800px) {
   .Ccard1 {
-    width: 40ch;
     height: 40ch;
   }
 
   .Ccard2 {
-    width: 40ch;
     height: 40ch;
   }
 
   .Ccard3 {
-    width: 40ch;
     height: 40ch;
   }
 
   .Ccard4 {
-    width: 40ch;
     height: 40ch;
   }
 
   .Ccard5 {
-    width: 40ch;
     height: 40ch;
   }
 
   .Ccard6 {
-    width: 40ch;
     height: 40ch;
   }
 
   .Ccard7 {
-    width: 40ch;
     height: 40ch;
   }
 }
@@ -193,38 +177,71 @@
 @media (min-width: 925px) {
   /* Ideal Size */
 
+  .Ccontainer {
+    width: 100%;
+    height: 700px;
+  }
+
   .Ccard1 {
-    width: 80%;
     height: 50ch;
   }
 
   .Ccard2 {
-    width: 80%;
     height: 50ch;
   }
 
   .Ccard3 {
-    width: 80%;
     height: 50ch;
   }
 
   .Ccard4 {
-    width: 80%;
     height: 50ch;
   }
 
   .Ccard5 {
-    width: 80%;
     height: 50ch;
   }
 
   .Ccard6 {
-    width: 80%;
     height: 50ch;
   }
 
   .Ccard7 {
-    width: 80%;
     height: 50ch;
+  }
+}
+
+@media (min-width: 1300px) {
+  .Ccontainer {
+    width: 100%;
+    height: 700px;
+  }
+
+  .Ccard1 {
+    height: 60ch;
+  }
+
+  .Ccard2 {
+    height: 60ch;
+  }
+
+  .Ccard3 {
+    height: 60ch;
+  }
+
+  .Ccard4 {
+    height: 60ch;
+  }
+
+  .Ccard5 {
+    height: 60ch;
+  }
+
+  .Ccard6 {
+    height: 60ch;
+  }
+
+  .Ccard7 {
+    height: 60ch;
   }
 }
