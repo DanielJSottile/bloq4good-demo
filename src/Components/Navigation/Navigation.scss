@@ -21,6 +21,7 @@
 .hamburger {
   font-size: 35px;
   background-color: transparent;
+  color: $med-gray;
   border: none;
   margin-right: 15px;
   width: 50px;
@@ -28,17 +29,9 @@
   &:focus {
     outline: none;
   }
-}
-
-.open {
-  &:before {
-    content: '\2630';
-  }
-}
-
-.closed {
-  &:before {
-    content: '\2716';
+  &:hover {
+    transition: 0.3s;
+    color: $steel-blue;
   }
 }
 
