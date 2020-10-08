@@ -12,7 +12,7 @@ const Problems = (props: any): JSX.Element => {
   let timesArr: any[] = [0, 0, 0, 0];
 
   timesArr = timesArr.map((time: number) => {
-    return randomNumber(1, 1000);
+    return randomNumber(1, 500);
   });
 
   return (

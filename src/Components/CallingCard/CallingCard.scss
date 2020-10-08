@@ -11,13 +11,13 @@
   background-color: $prussian-blue;
 }
 
-.Ccard1,
-.Ccard2,
-.Ccard3,
-.Ccard4,
-.Ccard5,
-.Ccard6,
-.Ccard7 {
+.cc-card1,
+.cc-card2,
+.cc-card3,
+.cc-card4,
+.cc-card5,
+.cc-card6,
+.cc-card7 {
   position: absolute;
   text-align: center;
   border-radius: 5px;
@@ -27,49 +27,49 @@
   will-change: transform;
 }
 
-.Ccard1 {
+.cc-card1 {
   width: 85%;
   height: 20ch;
   background-image: url('../../Images/SubImages/background-final.png');
 }
 
-.Ccard2 {
+.cc-card2 {
   width: 85%;
   height: 20ch;
   background-image: url('../../Images/SubImages/maps-final.png');
 }
 
-.Ccard3 {
+.cc-card3 {
   width: 85%;
   height: 20ch;
   background-image: url('../../Images/SubImages/rainbow-final.png');
 }
 
-.Ccard4 {
+.cc-card4 {
   width: 85%;
   height: 20ch;
   background-image: url('../../Images/SubImages/lines-final.png');
 }
 
-.Ccard5 {
+.cc-card5 {
   width: 85%;
   height: 20ch;
   background-image: url('../../Images/SubImages/logo-final.png');
 }
 
-.Ccard6 {
+.cc-card6 {
   width: 85%;
   height: 20ch;
   background-image: url('../../Images/SubImages/bridging-final.png');
 }
 
-.Ccard7 {
+.cc-card7 {
   width: 85%;
   height: 20ch;
   background-image: url('../../Images/SubImages/text-final.png');
 }
 
-.Ccontainer {
+.cc-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -80,96 +80,96 @@
 }
 
 @media (min-width: 600px) {
-  .Ccontainer {
+  .cc-container {
     width: 100%;
     height: 550px;
   }
 
-  .Ccard1 {
+  .cc-card1 {
     height: 25ch;
   }
 
-  .Ccard2 {
+  .cc-card2 {
     height: 25ch;
   }
 
-  .Ccard3 {
+  .cc-card3 {
     height: 25ch;
   }
 
-  .Ccard4 {
+  .cc-card4 {
     height: 25ch;
   }
 
-  .Ccard5 {
+  .cc-card5 {
     height: 25ch;
   }
 
-  .Ccard6 {
+  .cc-card6 {
     height: 25ch;
   }
 
-  .Ccard7 {
+  .cc-card7 {
     height: 25ch;
   }
 }
 
 @media (min-width: 700px) {
-  .Ccard1 {
+  .cc-card1 {
     height: 30ch;
   }
 
-  .Ccard2 {
+  .cc-card2 {
     height: 30ch;
   }
 
-  .Ccard3 {
+  .cc-card3 {
     height: 30ch;
   }
 
-  .Ccard4 {
+  .cc-card4 {
     height: 30ch;
   }
 
-  .Ccard5 {
+  .cc-card5 {
     height: 30ch;
   }
 
-  .Ccard6 {
+  .cc-card6 {
     height: 30ch;
   }
 
-  .Ccard7 {
+  .cc-card7 {
     height: 30ch;
   }
 }
 
 @media (min-width: 800px) {
-  .Ccard1 {
+  .cc-card1 {
     height: 40ch;
   }
 
-  .Ccard2 {
+  .cc-card2 {
     height: 40ch;
   }
 
-  .Ccard3 {
+  .cc-card3 {
     height: 40ch;
   }
 
-  .Ccard4 {
+  .cc-card4 {
     height: 40ch;
   }
 
-  .Ccard5 {
+  .cc-card5 {
     height: 40ch;
   }
 
-  .Ccard6 {
+  .cc-card6 {
     height: 40ch;
   }
 
-  .Ccard7 {
+  .cc-card7 {
     height: 40ch;
   }
 }
@@ -177,71 +177,71 @@
 @media (min-width: 925px) {
   /* Ideal Size */
 
-  .Ccontainer {
+  .cc-container {
     width: 100%;
     height: 700px;
   }
 
-  .Ccard1 {
+  .cc-card1 {
     height: 50ch;
   }
 
-  .Ccard2 {
+  .cc-card2 {
     height: 50ch;
   }
 
-  .Ccard3 {
+  .cc-card3 {
     height: 50ch;
   }
 
-  .Ccard4 {
+  .cc-card4 {
     height: 50ch;
   }
 
-  .Ccard5 {
+  .cc-card5 {
     height: 50ch;
   }
 
-  .Ccard6 {
+  .cc-card6 {
     height: 50ch;
   }
 
-  .Ccard7 {
+  .cc-card7 {
     height: 50ch;
   }
 }
 
 @media (min-width: 1300px) {
-  .Ccontainer {
+  .cc-container {
     width: 100%;
     height: 700px;
   }
 
-  .Ccard1 {
+  .cc-card1 {
     height: 60ch;
   }
 
-  .Ccard2 {
+  .cc-card2 {
     height: 60ch;
   }
 
-  .Ccard3 {
+  .cc-card3 {
     height: 60ch;
   }
 
-  .Ccard4 {
+  .cc-card4 {
     height: 60ch;
   }
 
-  .Ccard5 {
+  .cc-card5 {
     height: 60ch;
   }
 
-  .Ccard6 {
+  .cc-card6 {
     height: 60ch;
   }
 
-  .Ccard7 {
+  .cc-card7 {
     height: 60ch;
   }
 }

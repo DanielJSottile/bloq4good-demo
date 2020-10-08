@@ -7,6 +7,7 @@ const calc = (x: any, y: any) => [
   x - window.innerWidth / 2,
   y - window.innerHeight / 2,
 ];
+
 const trans1 = (x: any, y: any) => `translate3d(${x / 80}px,${y / 80}px,0)`;
 const trans2 = (x: any, y: any) => `translate3d(${x / 25}px,${y / 25}px,0)`;
 const trans3 = (x: any, y: any) => `translate3d(${x / 15}px,${y / 15}px,0)`;
@@ -25,35 +26,35 @@ const CallingCard = (): JSX.Element => {
     <section className="calling-card-section">
       <ScrollAnimation animateIn="fade-in" animateOnce={true}>
         <div
-          className="Ccontainer"
+          className="cc-container"
           onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
         >
           <animated.div
-            className="Ccard1"
+            className="cc-card1"
             style={{ transform: props.xy.interpolate(trans1 as any) }}
           />
           <animated.div
-            className="Ccard2"
+            className="cc-card2"
             style={{ transform: props.xy.interpolate(trans2 as any) }}
           />
           <animated.div
-            className="Ccard3"
+            className="cc-card3"
             style={{ transform: props.xy.interpolate(trans3 as any) }}
           />
           <animated.div
-            className="Ccard4"
+            className="cc-card4"
             style={{ transform: props.xy.interpolate(trans4 as any) }}
           />
           <animated.div
-            className="Ccard5"
+            className="cc-card5"
             style={{ transform: props.xy.interpolate(trans5 as any) }}
           />
           <animated.div
-            className="Ccard6"
+            className="cc-card6"
             style={{ transform: props.xy.interpolate(trans6 as any) }}
           />
           <animated.div
-            className="Ccard7"
+            className="cc-card7"
             style={{ transform: props.xy.interpolate(trans7 as any) }}
           />
         </div>
