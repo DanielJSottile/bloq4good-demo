@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default class ErrorPage extends Component {
   state = { error: null };
 
-  static getDerivedStateFormError(error: string) {
+  static getDerivedStateFromError(error: string) {
     return error;
   }
 
